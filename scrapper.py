@@ -7,7 +7,7 @@ class FIFAscrapper(scrapy.Spider):
   name = 'FIFAscrapper'
 
   allowed_domains = ['www.fifaindex.com']
-  start_urls = ['https://www.fifaindex.com/players/fifa20/']
+  start_urls = ['https://www.fifaindex.com/players/fifa21/']
 
   def parse(self, response):
     link_players = response.css('a.link-player::attr(href)')
